@@ -1,0 +1,43 @@
+/* ピンク色の装飾と中央揃え */
+.pink{
+ color:rgb(255, 192, 203)  ;
+ text-align: center;
+ }
+
+ /* スカイブルー色の装飾と中央揃え */
+.blue{
+ color:skyblue;
+ text-align: center;
+
+}
+
+/* divタグ内の太字と中央揃え */
+#basic{
+ font-weight: bold;
+ text-align: center;
+}
+
+/* ページ全体のデフォルトの文字サイズを20pxに */
+html{
+ font: size 20px;
+}
+
+/* 標準フォントの指定 */
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+}
+
+/* h1タグの装飾 */
+h1{
+  font-size:  2rem;
+  font-family:  sans-serif;
+  letter-spacing: 1.2em;
+  text-shadow: 3px 3px 3px rgb(115, 115, 114);
+  text-align: center;
+  
+}
+
+/* pタグの中央揃え */
+p{
+ text-align: center; 
+}
