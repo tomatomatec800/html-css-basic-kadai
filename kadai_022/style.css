@@ -1,0 +1,97 @@
+h1, p, body {
+  margin: 0;
+}
+
+a,p{
+  font-size: 20px;
+}
+
+header{
+  margin-bottom: 20px;
+  background-color: rgb(244,79,79);
+  text-align: center;
+}
+
+h1{
+  color:rgb(255,255,255);
+}
+
+/* main要素内の余白を上下左右とも10px */
+main{
+  padding: 10px;
+}
+
+/*id名parentの要素 番左と一番右のアイテムも含め、均等な間隔で配置する */
+#parent{
+  display:flex;
+  justify-content:space-between
+  
+}
+
+/* contentsの要素について、以下のスタイルを設定 */
+.contents{
+  border: 3px solid rgb(238,204,204);
+  flex-basis: 25%;
+  padding: 10px 15px 10px 15px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+h2{
+  font-size: 25px;
+  border-bottom: 3px dotted rgb(236,122,122);
+
+}
+
+h2::before{
+  content:"●";
+  color:rgb(239,111,139)
+}
+
+.contents p:nth-of-type(2)::first-letter{
+  font-weight:bold;
+  color:rgb(97,206,249)
+}
+
+.contents img{
+  margin: 10px 0px 10px 0px;
+  width: 70%;
+
+}
+
+footer{
+  background-color: rgb(244,79,79);
+  text-align: center;
+}
+
+a{
+  color: rgb(255,255,255);
+}
+
+/* 訪問済みリンクの文字色がrgb(193, 234, 251)に変化する */
+a:visited{
+  color:rgb(193,234,251);
+}
+
+/*マウスカーソルが乗ると文字色がrgb(245, 178, 168)に変化する  */
+a:hover{
+  color:rgb(245,178,168);
+}
+
+/* 画面幅768px以下のスタイル設定 */
+@media(max-width:768px){
+  h2{
+    font-size: 30px;
+  }
+  
+  p{
+    font-size: 25px;
+  }
+
+  #parent{
+    flex-direction:column
+
+  }
+}
+
+
